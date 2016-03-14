@@ -10,25 +10,16 @@ import core from '../core/core.module';
 
 /** UI sub-modules */
 import githubActivity from './github-activity/github-activity.module';
-import featureList from './feature-list/feature-list.module';
 
 /** UI components */
-import header from './header/header.component';
-import highlights from './highlights/highlights.component';
-import footer from './footer/footer.component';
 
 const dependencies = [
   core,
-
-  githubActivity,
-  featureList
+  githubActivity
 ];
 
 const mod =
   angular
-    .module('app.ui', dependencies)
-    .component('header', header)
-    .component('highlights', highlights)
-    .component('footer', footer);
+    .module('app.ui', dependencies);
 
 export default mod.name;

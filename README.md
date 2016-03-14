@@ -41,6 +41,7 @@ Site will be live @ [hoogit.ca](https://hoogit.ca)
 - Run simple server to serve angular files.
 
 ## To Do
+- Switch to PureCSS instead of SkeletonCSS
 - TESTS
 - Build front-end.
 - ~~Dockerize website for easier managment.~~
