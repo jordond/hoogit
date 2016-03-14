@@ -1,0 +1,83 @@
+@import '../../main/_vars';
+
+$border: 1px $dark solid;
+
+.highlights {
+  background-image: url('./highlights-bg.png');
+  background-size: cover;
+  color: $white;
+  padding-bottom: 5rem;
+  padding: 8rem 0 7rem;
+  position: relative;
+  border-top: $border;
+
+  .highlights-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0;
+    opacity: 0.9;
+    background-image: linear-gradient(to bottom right,$primaryDark,$accent);
+  }
+
+  .highlight-icon {
+    margin-bottom: .5rem;
+    color: $accent;
+    &:hover {
+      animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+  }
+  .highlight-heading {
+    margin-bottom: .3rem;
+  }
+  .highlight-description {
+    opacity: .8;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 550px) {
+  .highlights {
+    padding: 7rem 0 6rem;
+
+    .highlight-heading {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .highlights {
+    padding: 10rem 0 11rem;
+
+    .highlight-heading {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .highlights {
+    padding: 15rem 0 15rem;
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
