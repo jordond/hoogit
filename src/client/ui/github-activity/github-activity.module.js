@@ -16,8 +16,7 @@ const dependencies = [
   angularMoment.name
 ];
 
-const mod =
-  angular
+export const mod = angular
     .module('app.ui.githubActivity', dependencies)
     .service('githubApi', service)
     .component('githubActivity', activity)
@@ -25,5 +24,7 @@ const mod =
     .component('commitStatus', commitStatus)
     .filter('branch', branch)
     .filter('reverse', reverse);
+
+console.log(mod);
 
 export default mod.name;
