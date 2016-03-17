@@ -25,6 +25,4 @@ export const mod = angular
     .filter('branch', branch)
     .filter('reverse', reverse);
 
-console.log(mod);
-
 export default mod.name;
