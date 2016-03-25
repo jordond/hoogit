@@ -12,14 +12,15 @@ import core from '../core/core.module';
 import githubActivity from './github-activity/github-activity.module';
 
 /** UI components */
+import headerComponent from './header/header.component';
 
 const dependencies = [
   core,
   githubActivity
 ];
 
-const mod =
-  angular
-    .module('app.ui', dependencies);
+const mod = angular
+  .module('app.ui', dependencies)
+  .component('header', headerComponent);
 
 export default mod.name;

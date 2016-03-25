@@ -2,6 +2,8 @@
 
 body {
   background-color: $white;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .button {
@@ -13,7 +15,7 @@ h3 {
 }
 
 a {
-  transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  transition: color 0.5s ease, border-color 0.2s ease;
 }
 
 .ph-popover {

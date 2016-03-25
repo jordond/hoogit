@@ -6,8 +6,7 @@ import './main.scss';
 
 /* eslint indent: 0 */
 const template = [
-  '<div>',
-    'Hello World',
+  '<div class="wrapper">',
   '</div>'
 ].join('');
 
