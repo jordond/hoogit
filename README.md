@@ -1,25 +1,28 @@
 # Hoogit
+
 [![Build Status](https://drone.hoogit.ca/api/badges/jordond/hoogit/status.svg)](https://drone.hoogit.ca/jordond/hoogit)
 
 Landing page for my main domain
 
 Site will be live @ [hoogit.ca](https://hoogit.ca)
 
-# Install
+## Install
 
-## From source
+### From source
+
 1. Clone the repo `git clone http://github.com/jordond/hoogit.git`
 1. Run `npm install`
 1. Run `npm run build`
 1. Run `npm start`
 1. Navigate to `http://localhost:8080`
 
-## Docker
+### Docker
+
 1. Clone the repo: `git clone http://github.com/jordond/hoogit.git`
 1. Build docker image: `docker build -t jordond/hoogit docker/`
 1. Create a container:
 
-```
+```bash
   docker run -d \
     --name=hoogit \
     --restart=always \
@@ -27,11 +30,13 @@ Site will be live @ [hoogit.ca](https://hoogit.ca)
     jordond/hoogit
 ```
 
-###Notes
+### Notes
+
 - I run this in a docker container, then have my nginx server reverse proxy to this.
 - Add `-e staging=true` to the `docker run` command to enable running from the `develop` branch.
 
-# Features
+## Features
+
 - Written with the following technologies:
   - Webpack
   - ES6
@@ -41,20 +46,24 @@ Site will be live @ [hoogit.ca](https://hoogit.ca)
 - Run simple server to serve angular files.
 
 ## To Do
+
+- Change nginx default site to point to project
 - Switch to PureCSS instead of SkeletonCSS
 - TESTS
 - Build front-end.
 - ~~Dockerize website for easier managment.~~
 - Generalize the docker file to its own image
 
-# Development
+## Development
+
 1. Clone the repo `git clone http://github.com/jordond/hoogit.git`
 1. Run `npm install`
 1. Run `npm run hook-install` to setup the precommit hook.
 1. Then run `npm run dev` *or* `npm run dev-prod` for testing production mode.
 1. Edit away, webpack will detect changes and rebuild, and then BrowserSync will reload.
 
-## NPM Scripts
+### NPM Scripts
+
 - `npm run lint`         - Run eslint on all javascript files in `src/`.
 - `npm run start`        - Start the server by running `bin/server.js`.
 - `npm run start-dev`    - Start server in development mode.
@@ -64,9 +73,9 @@ Site will be live @ [hoogit.ca](https://hoogit.ca)
 - `npm run hook-install` - Install a precommit hook that will run the tasks in the `package.json`.
 - `npm run hook-remove`  - Remove the precommit.
 
-# License
+## License
 
-```
+```text
 The MIT License (MIT)
 
 Copyright (c) 2015 Jordon de Hoog
