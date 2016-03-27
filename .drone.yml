@@ -12,13 +12,13 @@ deploy:
     host: hoogit.ca
     user: user
     commands:
-      - docker restart hoogit-staging
+      - docker-restart hoogit-staging
     when:
       branch: develop
   ssh:
     host: hoogit.ca
     user: user
     commands:
-      - docker restart hoogit
+      - docker-restart hoogit
     when:
       branch: master
