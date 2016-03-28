@@ -48,19 +48,19 @@
       }
     },
     "build:prod": {
-      "command": "webpack --verbose --colors --display-error-details --config prod.webpack.js",
+      "command": "webpack --verbose --colors --display-error-details --config config.webpack.js",
       "env": {
         "NODE_ENV": "production"
       }
     },
     "build:prod:watch": {
-      "command": "webpack --watch --debug --verbose --colors --display-error-details --config prod.webpack.js",
+      "command": "webpack --watch --debug --verbose --colors --display-error-details --config config.webpack.js",
       "env": {
         "NODE_ENV": "production"
       }
     },
     "build:dev": {
-      "command": "webpack --watch --debug --colors --display-error-details --config dev.webpack.js",
+      "command": "webpack --watch --debug --colors --display-error-details --config config.webpack.js",
       "env": {
         "NODE_ENV": "development",
         "PORT": 9000
