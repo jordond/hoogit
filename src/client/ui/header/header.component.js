@@ -40,16 +40,18 @@ const template = [
     '</div>',
   '</div>',
   '<div class="header_footer">',
-    '<a href="#projects" class="icon fa fa-chevron-down"></a>',
+    '<a href="#{{$ctrl.scrollTo}}" du-smooth-scroll class="icon fa fa-chevron-down"></a>',
   '</div>',
 ].join('');
 
-function controller() {
+function controller($document) {
   this.content = content;
 }
 
 const component = {
-  bindings: {},
+  bindings: {
+    scrollTo: '@'
+  },
   template,
   controller
 };

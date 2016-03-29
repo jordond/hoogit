@@ -11,11 +11,16 @@ const template = [
       '<p class="text">{{$ctrl.text}}</p>',
     '</div>',
     '<div class="transclude-content" ng-transclude></div>',
+    '<div class="footer" ng-hide="{{$ctrl.last}}">',
+      '<a href="#section-{{$ctrl.index + 1}}" du-smooth-scroll class="nav-button fa fa-chevron-down"></a>',
+    '</div><br /><br /><br />',
   '</div>',
 ].join('');
 
 const component = {
   bindings: {
+    index: '<',
+    last: '<',
     image: '<',
     title: '<',
     text: '<'

@@ -81,6 +81,7 @@
     "angular-messages": "^1.5.0",
     "angular-moment": "^0.10.3",
     "angular-sanitize": "^1.5.3",
+    "angular-scroll": "^1.0.0",
     "angular-ui-router": "^0.2.18",
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.6.5",
