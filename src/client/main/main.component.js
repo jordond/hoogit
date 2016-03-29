@@ -13,9 +13,15 @@ const content = {
     },
     {
       image: 'http://placehold.it/500x300',
-      title: 'Things I do',
-      text: 'Stuff',
+      title: 'Stuff I\'ve done',
+      text: 'Here a few of our open source projects.',
       template: '<projects></projects>'
+    },
+    {
+      image: 'http://placehold.it/500x300',
+      title: 'Lastest contributions',
+      text: 'Interactive view of my recent GitHub contributions.',
+      template: '<div><github-activity user="jordond" limit="4" enable-commit-status="true"></github-activity></div>'
     }
   ]
 };
@@ -26,13 +32,15 @@ const template = [
     '<div du-scroll-container="scroll-container">',
       '<header scroll-to="section-0"></header>',
     '</div>',
-    '<section ng-repeat="section in $ctrl.content.sections" id="section-{{$index}}" ',
-        'index="$index" last="$last" ',
-        'image="section.image" ',
-        'title="section.title" ',
-        'text="section.text">',
-      '<div ng-bind-html="section.template"></div>',
-    '</section>',
+    '<div du-scroll-container="scroll-container">',
+      '<section ng-repeat="section in $ctrl.content.sections" id="section-{{$index}}" ',
+          'index="$index" last="$last" ',
+          'image="section.image" ',
+          'title="section.title" ',
+          'template="section.template" ',
+          'text="section.text">',
+      '</section>',
+    '</div>',
   '</div>'
 ].join('');
 

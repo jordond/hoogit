@@ -4,8 +4,12 @@
  * Contains ui submodules for more complex components
  */
 
+const SCROLL_OFFSET = 50;
+
 import angular from 'angular';
 import angularScroll from 'angular-scroll';
+
+import register from '../util/register';
 
 import core from '../core/core.module';
 
@@ -13,6 +17,7 @@ import core from '../core/core.module';
 import githubActivity from './github-activity/github-activity.module';
 
 /** UI components */
+import compileDirective from './compile.directive';
 import headerComponent from './header/header.component';
 import sectionComponent from './section/section.component';
 import projectsComponent from './projects/projects.component';
@@ -29,12 +34,14 @@ const dependencies = [
   angularScroll
 ];
 
-console.log(angularScroll);
-
+const moduleName = 'app.ui';
 const mod = angular
-  .module('app.ui', dependencies)
+  .module(moduleName, dependencies)
   .component('header', headerComponent)
   .component('section', sectionComponent)
-  .component('projects', projectsComponent);
+  .component('projects', projectsComponent)
+  .value('duScrollOffset', SCROLL_OFFSET);
+
+register(moduleName).directive('compile', compileDirective);
 
 export default mod.name;
