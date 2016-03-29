@@ -1,5 +1,4 @@
 import './header.scss';
-import templateUrl from './header.tpl.html';
 
 const content = {
   title: 'Hoog IT',
@@ -24,6 +23,25 @@ const content = {
 
 /* eslint indent: 0 */
 const template = [
+  '<div></div>',
+  '<div class="header_content">',
+    '<div class="header_content_info">',
+      '<span class="image"><img ng-src="{{$ctrl.content.image}}"></span>',
+      '<h1 class="title">{{$ctrl.content.title}}</h1>',
+      '<p class="title subtitle">{{$ctrl.content.subtitle}}</p>',
+      '<p class="tagline">{{$ctrl.content.tagline}}</p>',
+    '</div>',
+    '<div class="header_content_footer">',
+      '<ul class="icons">',
+        '<li ng-repeat="icon in $ctrl.content.icons">',
+          '<a href="{{icon.link}}" class="icon fa" ng-class="icon.icon"></a>',
+        '</li>',
+      '</ul>',
+    '</div>',
+  '</div>',
+  '<div class="header_footer">',
+    '<a href="#projects" class="icon fa fa-chevron-down"></a>',
+  '</div>',
 ].join('');
 
 function controller() {
@@ -32,9 +50,8 @@ function controller() {
 
 const component = {
   bindings: {},
-  templateUrl,
+  template,
   controller
 };
-console.log(templateUrl);
 
 export default component;
