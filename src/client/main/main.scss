@@ -2,8 +2,16 @@
 
 body {
   background-color: $white;
-  min-height: 100vh;
+  height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  background-image: url("./images/overlay.png"), linear-gradient(20deg, rgba(#D16666, .4), rgba(#35A7FF, .5)), url("./images/bg.jpg");
+  background-repeat: repeat,	no-repeat,	no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: auto;
 }
 
 .button {

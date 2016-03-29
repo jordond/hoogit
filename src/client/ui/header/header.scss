@@ -1,9 +1,6 @@
-$iconColor: #BDBDBD;
+$iconColor: lighten(#76818E, 15%);
 
 header {
-  background-image: url("./overlay.png"), linear-gradient(20deg, rgba(#D16666, .4), rgba(#35A7FF, .5)), url("./bg.jpg");
-  background-repeat: repeat,	no-repeat,	no-repeat;
-  background-size: cover;
   min-height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -11,6 +8,7 @@ header {
   flex-direction: column;
   perspective: 1000px;
   position: relative;
+  padding: 0 0.5rem 0 0.5rem;
 
   .icon {
     text-decoration: none;
@@ -62,7 +60,7 @@ header {
   text-align: center;
   .header_content_info {
     font-weight: 100;
-    color: #757575;
+    color: #76818E;
     text-transform: uppercase;
     .image {
       position: relative;
@@ -82,17 +80,18 @@ header {
       img {
         display: block;
         margin: 0 auto;
+        background-color: white;
         border-radius: 100%;
         width: 50%;
         box-shadow: 0 0 0 .5rem #eeeeee;
       }
     }
     .title {
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.6rem;
       margin-bottom: 0.5rem;
     }
     .subtitle {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     }
     .tagline {
       text-transform: initial;
