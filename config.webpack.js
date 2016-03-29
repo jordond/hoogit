@@ -48,7 +48,7 @@ module.exports = {
   devtool: isProduction ? 'source-map' : 'inline-source-map',
   context: __dirname,
   entry: {
-    vendor: ['angular', 'angular-ui-router'],
+    vendor: ['angular', 'angular-sanitize', 'angular-ui-router'],
     app: entryJS
   },
   output: {

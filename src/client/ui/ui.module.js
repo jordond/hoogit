@@ -13,14 +13,17 @@ import githubActivity from './github-activity/github-activity.module';
 
 /** UI components */
 import headerComponent from './header/header.component';
+import sectionComponent from './section/section.component';
 
 const dependencies = [
+  'ngSanitize',
   core,
   githubActivity
 ];
 
 const mod = angular
   .module('app.ui', dependencies)
-  .component('header', headerComponent);
+  .component('header', headerComponent)
+  .component('section', sectionComponent);
 
 export default mod.name;
