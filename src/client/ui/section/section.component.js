@@ -10,7 +10,7 @@ const template = [
       '<div class="header"><h2>{{$ctrl.title}}</h2></div>',
       '<p class="text">{{$ctrl.text}}</p>',
     '</div>',
-    '<div class="template-content" compile="$ctrl.template"></div>',
+    '<div class="transclude-content" ng-transclude></div>',
     '<div class="footer" ng-hide="{{$ctrl.last}}">',
       '<a href="#section-{{$ctrl.index + 1}}" du-smooth-scroll class="next fa fa-chevron-down"></a>',
     '</div>',
@@ -23,9 +23,9 @@ const component = {
     last: '<',
     image: '<',
     title: '<',
-    text: '<',
-    template: '<'
+    text: '<'
   },
+  transclude: true,
   template
 };
 
