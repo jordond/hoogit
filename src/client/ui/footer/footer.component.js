@@ -8,19 +8,24 @@ const content = {
       popover: 'HoogIT'
     },
     {
-      url: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
-      icon: 'android',
-      popover: 'Play Store'
-    },
-    {
       url: 'https://github.com/jordond',
       icon: 'github',
       popover: 'GitHub Page'
     },
     {
+      url: 'https://play.google.com/store/apps/details?id=ca.hoogit.powerhour',
+      icon: 'android',
+      popover: 'Play Store'
+    },
+    {
       url: 'https://github.com/jordond/hoogit',
       icon: 'hashtag',
       popover: 'Site Source'
+    },
+    {
+      url: 'http://jordondehoog.ca',
+      icon: 'user',
+      popover: 'Resume'
     }
   ],
   copyright: {

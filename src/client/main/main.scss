@@ -65,10 +65,10 @@ $iconColorHover: #D16666;
 }
 
 .ph-popover {
-  background-color: rgba($primary, 0.85);
+  background-color: rgba($iconColor, 0.85);
   border-radius: 5px;
   bottom: 42px;
-  box-shadow: 0 0 5px rgba($primary, 0.4);
+  box-shadow: 0 0 5px rgba($iconColor, 0.4);
   color: #fff;
   display: none;
   font-size: 12px;
@@ -80,7 +80,7 @@ $iconColorHover: #D16666;
   z-index: 4;
 
   &:before {
-    border-top: 7px solid rgba($primary, 0.85);
+    border-top: 7px solid rgba($iconColor, 0.85);
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
     bottom: -7px;
