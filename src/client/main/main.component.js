@@ -15,7 +15,7 @@ const content = {
       image: 'http://placehold.it/500x300',
       title: 'Stuff I\'ve done',
       text: 'Here a few of our open source projects.',
-      template: '<projects></projects>'
+      template: '<projects><h1>TODO</h1></projects>'
     },
     {
       title: 'Lastest contributions',

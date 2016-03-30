@@ -97,6 +97,16 @@ section {
   .container {
     width: 60%;
     padding: 10rem 5rem 5rem 5rem;
+    .content {
+      .header {
+        h2 {
+          font-size: 4rem;
+        }
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
     .footer {
       padding-top: 7rem;
     }
