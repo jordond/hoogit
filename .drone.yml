@@ -12,13 +12,13 @@ deploy:
     host: hoogit.ca
     user: drone
     commands:
-      - docker-restart hoogit-staging
+      - docker-rebuild hoogit-staging
     when:
       branch: develop
   ssh:
     host: hoogit.ca
     user: drone
     commands:
-      - docker-restart hoogit
+      - docker-rebuild hoogit
     when:
       branch: master
