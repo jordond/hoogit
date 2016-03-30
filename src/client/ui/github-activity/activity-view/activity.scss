@@ -13,7 +13,7 @@
   }
   .event-headers {
     display: none;
-    color: $accent;
+    color: $accentDark;
     h4 {
       font-size: 2rem;
       margin-bottom: 0;
@@ -36,9 +36,9 @@
     }
     a {
       text-decoration: none;
-      color: $primary;
+      color: darken($primaryDark, 10%);
       &:hover {
-        color: darken($primaryDark, 20%);
+        color: darken($primaryDark, 40%);
       }
     }
     .event-body-commit {

@@ -1,21 +1,21 @@
 <div class="activity" ng-show="$ctrl.events">
   <div class="row event-headers">
-    <div class="three columns">
-      <h4>Author</h4>
+    <div class="four columns">
+      <h4>Repository</h4>
     </div>
-    <div class="nine columns">
+    <div class="eight columns">
       <h4 class="event-header-commit">Commits</h4>
     </div>
   </div>
 
   <div class="row event-body" ng-repeat="event in $ctrl.events" ng-class="{'first': $first}">
-    <div class="three columns">
-      <a href="http://github.com/{{ event.actor.login }}" target="_blank">
-        <i class="fa fa-github"></i> {{ event.actor.login }}
+    <div class="four columns">
+      <a href="http://github.com/{{ event.repo.name }}" target="_blank">
+        <i class="fa fa-github"></i> {{ event.repo.name | repo }}
       </a>
       <div am-time-ago="event.created_at"></div>
     </div>
-    <div class="nine columns event-body-commit">
+    <div class="eight columns event-body-commit">
       <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.commitLimit || 3 | reverse">
         <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
           {{ commit.sha | limitTo:7 }}

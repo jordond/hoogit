@@ -9,7 +9,7 @@ import angularMoment from 'angular-moment';
 import service from './github-api.service';
 import activity from './activity-view/activity.component';
 import commitStatus from './commit-status/commit-status.component';
-import { branch, reverse } from './misc.filter';
+import { branch, repo, reverse } from './misc.filter';
 
 const dependencies = [
   angularMoment.name
@@ -21,6 +21,7 @@ export const mod = angular
     .component('githubActivity', activity)
     .component('commitStatus', commitStatus)
     .filter('branch', branch)
+    .filter('repo', repo)
     .filter('reverse', reverse);
 
 export default mod.name;
