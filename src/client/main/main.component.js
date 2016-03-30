@@ -4,15 +4,18 @@
  */
 import './main.scss';
 
+import imageOcean from './images/bg-ocean.jpg';
+import imageSkyscraper from './images/bg-skyscraper.jpg';
+
 const content = {
   sections: [
     {
-      image: 'http://placehold.it/500x300',
+      image: imageOcean,
       title: 'Who I am',
       text: 'Ut auctor nunc vel turpis efficitur bibendum. Proin neque quam, volutpat quis nibh ac, eleifend placerat dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
     },
     {
-      image: 'http://placehold.it/500x300',
+      image: imageSkyscraper,
       title: 'Stuff I\'ve done',
       text: 'Here a few of our open source projects.',
       template: '<projects><h1>TODO</h1></projects>'

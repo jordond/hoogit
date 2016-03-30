@@ -3,9 +3,9 @@ import './section.scss';
 /* eslint indent:0 */
 const template = [
   '<div class="container">',
-    '<div class="image" ng-show="$ctrl.image">',
+    '<span class="image" ng-show="$ctrl.image">',
       '<img class="u-max-full-width" ng-src="{{$ctrl.image}}" alt="Section image">',
-    '</div>',
+    '</span>',
     '<div class="content">',
       '<div class="header"><h2>{{$ctrl.title}}</h2></div>',
       '<p class="text" ng-show="$ctrl.text">{{$ctrl.text}}</p>',
