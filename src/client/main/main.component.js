@@ -18,10 +18,13 @@ const content = {
       template: '<projects></projects>'
     },
     {
-      image: 'http://placehold.it/500x300',
       title: 'Lastest contributions',
       text: 'Interactive view of my recent GitHub contributions.',
-      template: '<div><github-activity user="jordond" limit="4" enable-commit-status="true"></github-activity></div>'
+      template: '<div><github-activity user="jordond" commit-limit="1" enable-commit-status="true"></github-activity></div>'
+    },
+    {
+      title: 'Wanna talk?',
+      template: '<h3>I\'m a cool contact form... TODO</h3>'
     }
   ]
 };
@@ -30,16 +33,15 @@ const content = {
 const template = [
   '<div class="wrapper" id="scroll-container">',
     '<div du-scroll-container="scroll-container">',
-      '<header scroll-to="section-0"></header>',
-    '</div>',
-   '<div du-scroll-container="scroll-container">',
-     '<section ng-repeat="section in $ctrl.content.sections" id="section-{{$index}}" ',
-          'index="$index" last="$last" ',
-          'image="section.image" ',
-          'title="section.title" ',
-          'text="section.text">',
+      '<header id="top" scroll-to="section-0"></header>',
+      '<section ng-repeat="section in $ctrl.content.sections" id="section-{{$index}}" ',
+               'index="$index" last="$last" ',
+               'image="section.image" ',
+               'title="section.title" ',
+               'text="section.text">',
         '<div compile="section.template"></div>',
       '</section>',
+      '<footer></footer>',
     '</div>',
   '</div>'
 ].join('');

@@ -18,6 +18,7 @@ const activityComponent = {
   bindings: {
     user: '@',
     limit: '@',
+    commitLimit: '@',
     repo: '@',
     enableCommitStatus: '@'
   },

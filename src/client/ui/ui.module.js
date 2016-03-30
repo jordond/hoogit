@@ -21,6 +21,7 @@ import compileDirective from './compile.directive';
 import headerComponent from './header/header.component';
 import sectionComponent from './section/section.component';
 import projectsComponent from './projects/projects.component';
+import footerComponent from './footer/footer.component';
 
 const dependencies = [
   /* Angular Modules */
@@ -40,6 +41,7 @@ const mod = angular
   .component('header', headerComponent)
   .component('section', sectionComponent)
   .component('projects', projectsComponent)
+  .component('footer', footerComponent)
   .value('duScrollOffset', SCROLL_OFFSET);
 
 register(moduleName).directive('compile', compileDirective);

@@ -64,6 +64,11 @@ section {
           color: #D16666;
         }
       }
+      &.to-top {
+        &:before {
+          padding-bottom: 2rem;
+        }
+      }
     }
   }
 }
