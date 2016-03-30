@@ -92,25 +92,10 @@ $iconColorHover: #D16666;
   }
 }
 
-.section {
-  padding: 6rem 0 7rem;
-  text-align: center;
-}
-
-@media (min-width: 550px) {
-  .section {
-    padding: 12rem 0 11rem;
-  }
-}
-
-@media (min-width: 750px) {
-  .section {
-    padding: 14rem 0 15rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .section {
-    padding: 20rem 0 19rem;
+section {
+  &:first-of-type {
+    .container {
+      box-shadow: none;
+    }
   }
 }
