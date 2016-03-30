@@ -44,7 +44,7 @@ const template = [
   '</div>',
 ].join('');
 
-function controller($document) {
+function controller() {
   this.content = content;
 }
 
