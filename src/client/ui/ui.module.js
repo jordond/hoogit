@@ -15,21 +15,22 @@ import core from '../core/core.module';
 
 /** UI sub-modules */
 import githubActivity from './github-activity/github-activity.module';
+import projectsModule from './projects/projects.module';
 
 /** UI components */
 import compileDirective from './compile.directive';
 import headerComponent from './header/header.component';
 import sectionComponent from './section/section.component';
-import projectsComponent from './projects/projects.component';
 import footerComponent from './footer/footer.component';
 
 const dependencies = [
   /* Angular Modules */
   'ngSanitize',
 
-  /* Cross-app modules */
+  /* App modules */
   core,
   githubActivity,
+  projectsModule,
 
   /* Third party */
   angularScroll
@@ -40,7 +41,6 @@ const mod = angular
   .module(moduleName, dependencies)
   .component('header', headerComponent)
   .component('section', sectionComponent)
-  .component('projects', projectsComponent)
   .component('footer', footerComponent)
   .value('duScrollOffset', SCROLL_OFFSET);
 

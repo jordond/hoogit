@@ -1,4 +1,4 @@
-import './projects.scss';
+import './project.scss';
 
 const content = {
   items: [
