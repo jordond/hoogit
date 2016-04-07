@@ -1,0 +1,36 @@
+<div class="activity" ng-show="$ctrl.events">
+  <div class="row event-headers">
+    <div class="four columns">
+      <h4>Repository</h4>
+    </div>
+    <div class="eight columns">
+      <h4 class="event-header-commit">Commits</h4>
+    </div>
+  </div>
+
+  <div class="row event-body" ng-repeat="event in $ctrl.events" ng-class="{'first': $first}">
+    <div class="four columns">
+      <a href="http://github.com/{{ event.repo.name }}" target="_blank">
+        <i class="fa fa-github"></i> {{ event.repo.name | repo }}
+      </a>
+      <div am-time-ago="event.created_at"></div>
+    </div>
+    <div class="eight columns event-body-commit">
+      <p ng-repeat="commit in event.payload.commits | filter:{distinct: true} | limitTo: $ctrl.commitLimit || 3 | reverse">
+        <a href="http://github.com/{{ event.repo.name }}/commit/{{ commit.sha }}" target="_blank">
+          {{ commit.sha | limitTo:7 }}
+        </a>
+        &commat;
+        <a href="http://github.com/{{ event.repo.name }}/tree/{{ event.payload.ref | branch }}" target="_blank">
+          {{ event.payload.ref | branch }}
+        </a>
+        <span class="commit-status" ng-if="$ctrl.enableCommitStatus && $first" ng-show="event.status.state">
+          <span class="commit-status-text"><i class="fa fa-long-arrow-right"></i></span>
+          <commit-status status="event.status" use-text="true"></commit-status>
+        </span>
+        <br>
+        <span class="commit-message">{{ commit.message }}</span>
+      </p>
+    </div>
+  </div>
+</div>
