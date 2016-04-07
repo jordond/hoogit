@@ -65,6 +65,7 @@ Site will be live @ [hoogit.ca](https://hoogit.ca)
 ### NPM Scripts
 
 - `npm run lint`         - Run eslint on all javascript files in `src/`.
+- `npm run clean`        - Clean all the built files in `static/dist`.
 - `npm run start`        - Start the server by running `bin/server.js`.
 - `npm run start-dev`    - Start server in development mode.
 - `npm run build`        - Build all of the front-end javascript with webpack.

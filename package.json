@@ -15,6 +15,7 @@
   "homepage": "https://github.com/jordond/hoogit#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
+    "clean": "rimraf static/dist",
     "lint": "eslint -c .eslintrc src",
     "start": "better-npm-run start:prod",
     "start-dev": "better-npm-run start:dev",
@@ -113,6 +114,7 @@
     "node-sass": "^3.4.2",
     "normalize.css": "^3.0.3",
     "precommit": "^1.2.0",
+    "rimraf": "^2.5.2",
     "sass-loader": "^3.1.2",
     "sass-material-colors": "0.0.5",
     "skeleton-css": "^2.0.4",
