@@ -1,10 +1,11 @@
 import './header.scss';
+import backgroundPhoto from './bg-beach.png';
 
 const content = {
   title: 'Hoog IT',
   subtitle: 'Software Development',
   tagline: '"Don\'t just do it, Hoog it." - Obama',
-  image: 'http://placehold.it/300x300',
+  image: backgroundPhoto,
   icons: [
     {
       link: 'https://github.com/jordond',

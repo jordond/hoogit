@@ -10,25 +10,30 @@ import imageSkyscraper from './images/bg-skyscraper.jpg';
 const content = {
   sections: [
     {
-      image: imageOcean,
-      title: 'Who I am',
-      text: 'Ut auctor nunc vel turpis efficitur bibendum. Proin neque quam, volutpat quis nibh ac, eleifend placerat dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+      title: 'Under Construction',
+      text: 'Hi I\'m temporary.  This website is still very much under construction.  It may change frequently, so do not be concernced if something is odd, or out of place.',
+      template: '<div><p>If you wan\'t to see the bleeding edge version check out the <a href="http://staging.hoogit.ca">staging</a> page.</p></div>'
     },
     {
-      image: imageSkyscraper,
-      title: 'Stuff I\'ve done',
-      text: 'Here a few of our open source projects.',
-      template: '<projects><h1>TODO</h1></projects>'
+      image: imageOcean,
+      title: 'Who I am',
+      text: 'Just a guy with a keyboard and mouse.  I like to make',
     },
+    // {
+    //   image: imageSkyscraper,
+    //   title: 'Stuff I\'ve done',
+    //   text: 'Here a few of our open source projects.',
+    //   template: '<projects><h1>TODO</h1></projects>'
+    // },
     {
       title: 'Lastest contributions',
       text: 'Interactive view of my recent GitHub contributions.',
       template: '<div><github-activity user="jordond" commit-limit="1" enable-commit-status="true"></github-activity></div>'
-    },
-    {
-      title: 'Wanna talk?',
-      template: '<h3>I\'m a cool contact form... TODO</h3>'
     }
+    // {
+    //   title: 'Wanna talk?',
+    //   template: '<h3>I\'m a cool contact form... TODO</h3>'
+    // }
   ]
 };
 
