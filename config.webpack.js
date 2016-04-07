@@ -79,7 +79,7 @@ module.exports = {
       loader: 'file?name=fonts/[name].[ext]'
     }, {
       test: /\.(woff|woff2|eot|ttf|svg)$/,
-      loader: 'url-loader?name=fonts/[name].[ext]&limit=100000'
+      loader: 'url-loader?name=fonts/[name].[ext]&limit=1000000'
     }, {
       test: /\.png$/,
       loader: 'url-loader?name=images/[hash:6]-[name].png&limit=100000&mimetype=image/png'
