@@ -2,6 +2,8 @@
 
 [![Build Status](https://drone.hoogit.ca/api/badges/jordond/hoogit/status.svg)](https://drone.hoogit.ca/jordond/hoogit)
 
+Powered by my [ES6 Angular seed](https://github.com/jordond/angular-es6-starter)
+
 Landing page for my main domain
 
 Site will be live @ [hoogit.ca](https://hoogit.ca)
