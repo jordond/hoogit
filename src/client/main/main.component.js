@@ -17,7 +17,7 @@ const content = {
     {
       image: imageOcean,
       title: 'Who I am',
-      text: 'Just a guy with a keyboard and mouse.  I like to make',
+      text: 'Just a guy with a keyboard and mouse, and am a man of very few words.',
     },
     // {
     //   image: imageSkyscraper,
