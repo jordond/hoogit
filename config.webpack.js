@@ -14,7 +14,7 @@ const entryJS = path.resolve('./src/client/index.js');
 const isProduction = process.env.NODE_ENV === 'production';
 
 const productionPlugins = [
-  new CleanPlugin([path.join(assetPath, 'dist')], { root: projectRoot, verbose: true }),
+  new CleanPlugin([assetPath], { root: projectRoot, verbose: true }),
   new webpack.optimize.DedupePlugin(),
   new webpack.optimize.OccurenceOrderPlugin(),
   new webpack.optimize.UglifyJsPlugin({
