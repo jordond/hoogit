@@ -1,0 +1,45 @@
+@import '../../../main/_vars';
+
+.project_content {
+  overflow: hidden;
+  position: relative;
+  min-height: 300px;
+  .project_titles {
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span {
+    }
+  }
+  .project_content_hover {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    color: #424242;
+    background-color: $accent;
+    transition: visibility 0s, opacity 0.5s linear;
+
+    p {
+      margin-bottom: 0;
+      padding: 0 1rem;
+    }
+  }
+  &:hover {
+    cursor: pointer;
+    .project_content_hover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

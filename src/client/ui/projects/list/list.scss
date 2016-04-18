@@ -1,0 +1,37 @@
+.project_list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+
+  .project_item {
+    width: 100%;
+    float: none;
+    display: block;
+    margin-bottom: 0;
+
+    &:nth-child(2n + 1) {
+      box-shadow: inset -1px 0 0 0 #dddddd, 1px 0 0 0 #dddddd;
+    }
+    &:nth-child(2n + 3) {
+      &:before {
+        background: #dddddd;
+        content: '';
+        display: block;
+        height: 2px;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .project_list {
+    .project_item {
+      float: left;
+      width: 50%;
+    }
+  }
+}
