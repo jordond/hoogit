@@ -5,7 +5,7 @@ import itemComponent from './project/project.component';
 
 export const mod = angular
     .module('app.ui.projects', [])
-    .component('projectsList', listComponent)
-    .component('projectItem', itemComponent);
+    .component(listComponent.name, listComponent)
+    .component(itemComponent.name, itemComponent);
 
 export default mod.name;
