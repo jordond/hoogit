@@ -22,7 +22,7 @@ const content = {
     {
       title: 'Lastest contributions',
       text: 'Interactive view of my recent GitHub contributions.',
-      template: '<div><github-activity user="jordond" commit-limit="1" enable-commit-status="true"></github-activity></div>'
+      template: '<div><github-activity user="jordond" commit-limit="2" enable-commit-status="true"></github-activity></div>'
     },
     {
       title: 'Wanna talk?',
