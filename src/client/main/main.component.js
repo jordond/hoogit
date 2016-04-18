@@ -17,7 +17,7 @@ const content = {
     {
       image: imageSkyscraper,
       title: 'Stuff I\'ve done',
-      text: 'Here a few of our open source projects.',
+      text: 'Here a few of my open source projects.',
       template: '<projects><h1>TODO</h1></projects>'
     },
     {

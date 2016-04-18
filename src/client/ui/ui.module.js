@@ -4,7 +4,7 @@
  * Contains ui submodules for more complex components
  */
 
-const SCROLL_OFFSET = 0;
+const SCROLL_OFFSET = -50;
 
 import angular from 'angular';
 import angularScroll from 'angular-scroll';

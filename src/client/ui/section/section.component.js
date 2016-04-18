@@ -13,7 +13,7 @@ const template = [
     '<div class="transclude-content" ng-transclude></div>',
     '<div class="footer">',
       '<a ng-hide="{{$ctrl.last}}" href="#section-{{$ctrl.index + 1}}" du-smooth-scroll class="next fa fa-chevron-down"></a>',
-      '<a ng-show="{{$ctrl.last}}" href="#top" du-smooth-scroll class="next to-top fa fa-chevron-up"></a>',
+      '<a ng-show="{{$ctrl.last}}" href="#top" offset="0" du-smooth-scroll class="next to-top fa fa-chevron-up"></a>',
     '</div>',
   '</div>',
 ].join('');
