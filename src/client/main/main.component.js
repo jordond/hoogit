@@ -5,7 +5,7 @@
 import './main.scss';
 
 import imageOcean from './images/bg-ocean.jpg';
-import imageSkyscraper from './images/bg-skyscraper.jpg';
+// import imageSkyscraper from './images/bg-skyscraper.jpg';
 
 const content = {
   sections: [
@@ -15,10 +15,9 @@ const content = {
       text: 'Just a guy with a keyboard and mouse, I like to make things.',
     },
     {
-      image: imageSkyscraper,
       title: 'Stuff I\'ve done',
       text: 'Here a few of my open source projects.',
-      template: '<projects><h1>TODO</h1></projects>'
+      template: '<projects></projects>'
     },
     {
       title: 'Lastest contributions',
