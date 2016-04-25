@@ -5,7 +5,8 @@ build:
   image: node:wheezy
   commands:
     - npm install --unsafe-perm
-    - npm run build
+    - npm run lint
+    - npm test
 
 deploy:
   ssh:
