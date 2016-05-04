@@ -35,7 +35,7 @@ const commonPlugins = [
 const sharedConfig = {
   context: __dirname,
   entry: {
-    vendor: ['angular', 'angular-ui-router'],
+    vendor: ['angular', 'angular-sanitize', 'angular-ui-router'],
     app: entryJS
   },
   output: {
@@ -51,7 +51,7 @@ const sharedConfig = {
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.scss$/, loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader' },
       { test: /\.js$/, exclude: /(node_modules)/, loader: 'ng-annotate!babel' },
-      { test: /\.(jpe|jpg|woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'file?name=fonts/[name].[ext]' },
+      { test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/, loader: 'file?name=fonts/[name].[ext]' },
       { test: /\.png$/, loader: 'url-loader?name=images/[hash:6]-[name].png&limit=100000&mimetype=image/png' },
       { test: /\.jpg$/, loader: 'file-loader?name=images/[name].[ext]' },
       { test: /\.json$/, loader: 'file?name=json/[name].[ext]' }
